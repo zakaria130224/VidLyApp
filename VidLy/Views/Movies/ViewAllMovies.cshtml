@@ -1,0 +1,40 @@
+﻿@model IEnumerable<VidLy.Models.Movie>
+@{
+    ViewBag.Title = "ViewAllMovies";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ViewAllMovies</h2>
+
+@if (!Model.Any())
+{
+    <h1>No Movies Added Yet!</h1>
+}
+else
+{
+    <div class="container">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var movies in Model)
+                {
+                    <tr>
+                        @*<td>@Html.ActionLink(movies.Id.ToString(), "Details", "Customers", new { id = movies.Id }, null)</td>
+                        <td>@Html.ActionLink(movies.Name, "Details", "Customers", new { id = movies.Id }, null)</td>*@
+                        <td>@movies.Id</td>
+                        <td>@movies.Name</td>
+
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+}
+
