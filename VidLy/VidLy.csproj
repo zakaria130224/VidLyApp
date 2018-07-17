@@ -175,6 +175,10 @@
     <Compile Include="Migrations\201807171208483_EditPoputaioInMembershipType.Designer.cs">
       <DependentUpon>201807171208483_EditPoputaioInMembershipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807171748403_addDOBInCustomer.cs" />
+    <Compile Include="Migrations\201807171748403_addDOBInCustomer.Designer.cs">
+      <DependentUpon>201807171748403_addDOBInCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -262,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201807171208483_EditPoputaioInMembershipType.resx">
       <DependentUpon>201807171208483_EditPoputaioInMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807171748403_addDOBInCustomer.resx">
+      <DependentUpon>201807171748403_addDOBInCustomer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
